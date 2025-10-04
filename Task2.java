@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.HashMap;
 
-public class StudentMarksCalculator extends JFrame implements ActionListener {
+public class Task2 extends JFrame implements ActionListener {
 
     private JComboBox<String> subjectDropdown;
     private JTextField marksField;
@@ -11,7 +11,7 @@ public class StudentMarksCalculator extends JFrame implements ActionListener {
     private JTextArea resultArea;
     private HashMap<String, Integer> subjectMarks;
 
-    public StudentMarksCalculator() {
+    public Task2() {
         setTitle("🎓 Student Marks & Grade Calculator 🎓");
         setSize(650, 520);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -152,6 +152,6 @@ public class StudentMarksCalculator extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new StudentMarksCalculator();
+        new Task2();
     }
 }

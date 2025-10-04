@@ -8,7 +8,7 @@ import java.net.URL;
 import java.util.HashMap;
 import org.json.JSONObject;
 
-public class CurrencyConverter extends JFrame implements ActionListener {
+public class Task4 extends JFrame implements ActionListener {
 
     private JComboBox<String> baseCurrency, targetCurrency;
     private JTextField amountField;
@@ -19,7 +19,7 @@ public class CurrencyConverter extends JFrame implements ActionListener {
     // Some common currencies
     private String[] currencies = {"USD", "INR", "EUR", "GBP", "JPY", "AUD", "CAD"};
 
-    public CurrencyConverter() {
+    public Task4() {
         setTitle("💱 Currency Converter");
         setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -151,6 +151,6 @@ public class CurrencyConverter extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new CurrencyConverter());
+        SwingUtilities.invokeLater(() -> new Task4());
     }
 }

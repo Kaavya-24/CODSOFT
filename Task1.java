@@ -3,14 +3,14 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
 
-public class NumberGuessingGame extends JFrame implements ActionListener {
+public class Task1 extends JFrame implements ActionListener {
     private JLabel titleLabel, messageLabel, attemptsLabel, scoreLabel;
     private JTextField guessField;
     private JButton guessButton, newGameButton, exitButton;
     private int randomNumber, attemptsLeft, score, round;
     private final int MAX_ATTEMPTS = 7;
 
-    public NumberGuessingGame() {
+    public Task1() {
         setTitle(" Number Guessing Game ");
         setSize(500, 400);
         setLayout(null);
@@ -130,6 +130,6 @@ public class NumberGuessingGame extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new NumberGuessingGame();
+        new Task1();
     }
 }
